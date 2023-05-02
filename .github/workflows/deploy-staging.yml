@@ -29,6 +29,7 @@ jobs:
         with:
           name: webpack artifacts
           path: public/
+          node-version: 16
 
   Build-Docker-Image:
     runs-on: ubuntu-latest

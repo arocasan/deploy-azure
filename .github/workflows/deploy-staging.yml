@@ -7,7 +7,6 @@ on:
 env:
   IMAGE_REGISTRY_URL: ghcr.io
   ###############################################
-  ### Replace <username> with GitHub username Yeah ###
 
   ##############################################
   DOCKER_IMAGE_NAME: arocasan-azure-ttt
@@ -61,7 +60,7 @@ jobs:
             type=sha,format=long,prefix=
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           push: true
